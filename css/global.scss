@@ -1,0 +1,71 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+@import "./sections/header";
+@font-face {
+    font-family: "Poppins";
+    src: url("/Poppins-SemiBold.woff2") format("woff2"),
+        url("/Poppins-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/Poppins-Regular.woff2") format("woff2"),
+        url("/Poppins-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/Poppins-Medium.woff2") format("woff2"),
+        url("/Poppins-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    height: 100%;
+    flex-grow: 1;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: $bg-body;
+    color: $textColor;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Popins", "Arial", sans-serif;
+    line-height: 22px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
